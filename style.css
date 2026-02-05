@@ -1,0 +1,39 @@
+*{
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    /* box: border-box; */
+}
+
+.container{
+    max-width: 900px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+header{
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: space-between; */
+    justify-content: space-between;
+    border: 1px dashed red;
+    gap: 10%;
+
+    .heading-page{
+        width: 550px;
+        height: 60px;
+        background-color: red;
+        margin: 1rem;
+       /*  flex-grow: 1; */
+       flex-grow: 1;
+    }
+
+    .billing-period{
+        width: 140px;
+        height: 60px;
+        background-color: red;
+        margin: 1rem;
+    }
+}
+
+

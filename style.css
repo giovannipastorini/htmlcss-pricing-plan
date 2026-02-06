@@ -39,31 +39,45 @@ header{
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    gap: 15px;
+    gap: 25px;
 
     border: 1px dashed red;
-    /* gap: 10%; */
+    
 
     .heading-page{
-        /* width: 550px; */
-        /* height: 60px; */
-        /* background-color: red; */
         border: 1px dashed blue;
-        /* margin: 1rem; */
-       /*  flex-grow: 1; */
+        flex-grow: 1;
     }
 
     .togglers{
-            /* width: 140px; */
-            /* height: 60px; */
-            border: 1px dashed fuchsia;
-            background-color: yellow;
-
+            border: 1px dashed blue;
             text-align: end;
-
             flex-grow: 1;
      }
     
 }
+
+.heading-page p{
+   /* line-height: 1.5rem; */
+}
+
+.heading-page h1{
+    font-size: 40px;
+}
+
+/* Utilities------------------ */
+
+.text-small{
+    font-size: 13px;
+}
+
+
+.text-muted{
+    color:rgb(97, 96, 96);
+}
+
+/* --------------------------- */
+
+
 
 

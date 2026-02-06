@@ -16,9 +16,7 @@ Bonus
 
 In modalità “tablet” (ossia quando entrano solo 2 card), la terza card occupa tutto lo spazio,
 Quando una card occupa tutto lo spazio, la lista delle feature deve sistemarsi in 2 colonne, come nello screen allegato.
-----------------------------------------------------------------------------------------------------------------------------------
 
-.bi bi-toggle-on -> 'icona bootstrap'
 
 
 

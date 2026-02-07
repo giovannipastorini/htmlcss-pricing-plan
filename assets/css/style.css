@@ -19,16 +19,57 @@ body{
     display: flex;
     /* flex-direction: row; */
     flex-wrap: wrap;
-    gap: 25px;
-    /* justify-content: space-evenly; */
+    gap: 15px;
+    
 
     
 }
 
 .col{
     flex-basis: calc(100% / 3 - (25px * 2) / 3);
-    background-color: red;
+    /* background-color: red; */
     min-width: 290px;
+    flex-grow: 1;
+}
+
+.card-generic{
+    background-color: cyan;
+    ul {
+        list-style-type: none;
+        text-align: center;
+
+        li{
+        line-height: 2rem;
+        }
+    }
+}
+
+#card3{
+    background-color: yellow;
+
+    .ul-flexator{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        /* gap: 15px; */
+
+        div{
+            min-width: 290px;
+
+            ul {
+            list-style-type: none;
+            text-align: center;
+
+            li{
+            line-height: 2rem;
+            }
+        }  
+
+        }
+
+      
+    }
+    
 }
 
 
@@ -71,6 +112,10 @@ header{
 
 .text-muted{
     color:rgb(97, 96, 96);
+}
+
+.d-flex{
+    display: flex;
 }
 
 /* --------------------------- */

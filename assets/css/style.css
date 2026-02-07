@@ -33,19 +33,46 @@ body{
 }
 
 .card-generic{
-    background-color: cyan;
+    text-align: center;
+    border: 2px dashed blue;
+
+    background-color: white;
+    padding: 1.5rem;
+
+    .card-header{
+        text-align: start;
+    }
+
     ul {
         list-style-type: none;
-        text-align: center;
+        /* text-align: center; */
 
         li{
         line-height: 2rem;
         }
     }
+
+    div.price{
+        /* text-align: center; */
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+    .price-terms{
+        margin-bottom: 1rem;
+
+        .price-detail{
+            background-color: rgb(220, 215, 215);
+            border-radius: 10px;
+            padding: 0.25rem;
+        }
+    }
+    
 }
 
 #card3{
-    background-color: yellow;
+    padding: 1.5rem;
+    background-color: white;
+    border: 2px dashed green;
 
     .ul-flexator{
         display: flex;
@@ -76,6 +103,8 @@ body{
 
 
 header{
+    margin-bottom: 2rem;
+
     padding: 1rem;
     display: flex;
     flex-direction: row;
@@ -116,6 +145,11 @@ header{
 
 .d-flex{
     display: flex;
+}
+
+.text-xxl{
+    font-size: 42px;
+    font-weight: bold;
 }
 
 /* --------------------------- */

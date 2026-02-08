@@ -4,6 +4,15 @@
     box-sizing: border-box;
 }
 
+/* variabili css */
+:root{
+    --bg-color-generic: white;
+    --bg-color-accent: rgb(27, 21, 213);
+    --text-color-generic: white;
+    --text-color-accent: rgb(27, 21, 213);
+}
+/* --------------- */
+
 body{
     font-family: sans-serif;
 }
@@ -15,29 +24,29 @@ body{
 }
 
 .row{
-   /*  width: 100%; */
     display: flex;
-    /* flex-direction: row; */
     flex-wrap: wrap;
-    gap: 15px;
+    /* gap: 25px; */
     
 
     
 }
 
 .col{
-    flex-basis: calc(100% / 3 - (25px * 2) / 3);
-    /* background-color: red; */
+    /* flex-basis: calc(100% / 3 - (25px * 2) / 3); */
+    flex-basis: calc(100% / 3);
     min-width: 290px;
     flex-grow: 1;
 }
 
 .card-generic{
+    margin: 0.75rem;
     text-align: center;
-    border: 2px dashed blue;
-
-    background-color: white;
     padding: 1.5rem;
+    background-color: var(--bg-color-generic);
+    
+    border-radius: 20px;
+    box-shadow: 0 0 10px gray;
 
     .card-header{
         text-align: start;
@@ -45,7 +54,6 @@ body{
 
     ul {
         list-style-type: none;
-        /* text-align: center; */
 
         li{
         line-height: 2rem;
@@ -53,54 +61,40 @@ body{
     }
 
     div.price{
-        /* text-align: center; */
         margin-top: 1rem;
         margin-bottom: 1rem;
     }
     .price-terms{
         margin-bottom: 1rem;
-
-        .price-detail{
-            background-color: rgb(220, 215, 215);
-            border-radius: 10px;
-            padding: 0.25rem;
-        }
     }
     
 }
 
-#card3{
-    padding: 1.5rem;
-    background-color: white;
-    border: 2px dashed green;
-
-    .ul-flexator{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
-        /* gap: 15px; */
-
-        div{
-            min-width: 290px;
-
-            ul {
-            list-style-type: none;
-            text-align: center;
-
-            li{
-            line-height: 2rem;
-            }
-        }  
-
-        }
+/* lista flessibile terza card */
+#ul-flexator{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+    div{
+        min-width: 290px;
+    }
 
       
-    }
-    
 }
 
-
-
+.btn{
+    border-style: none;
+    padding: 1rem 4rem; 
+    background-color: var(--bg-color-accent) ;
+    border-width: 0px;
+    border-color: transparent;
+    border-radius: 15px;
+    color: white;
+    margin: 1.5rem auto;
+    font-weight: bold;
+    width: 100%;
+}
 
 header{
     margin-bottom: 2rem;
@@ -110,18 +104,13 @@ header{
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    gap: 25px;
-
-    border: 1px dashed red;
-    
+    gap: 25px;    
 
     .heading-page{
-        border: 1px dashed blue;
         flex-grow: 1;
     }
 
     .togglers{
-            border: 1px dashed blue;
             text-align: end;
             flex-grow: 1;
      }
@@ -143,6 +132,10 @@ header{
     color:rgb(97, 96, 96);
 }
 
+.text-generic{
+    color: var(--text-color-generic);
+}
+
 .d-flex{
     display: flex;
 }
@@ -152,6 +145,31 @@ header{
     font-weight: bold;
 }
 
+.d-block{
+    display: block;
+}
+
+.accent{
+    background: linear-gradient(0deg, rgba(119, 0, 255, 1) 0%, rgba(6, 37, 209, 1) 100%);
+    
+    color: white;
+    box-shadow: none;
+
+    button{
+        background-color: var(--bg-color-generic);
+        color: var(--text-color-accent);
+    }
+}
+
+.price-detail{
+    background-color: rgb(220, 215, 215);
+    border-radius: 10px;
+    padding: 0.25rem;
+}
+
+.pd-accent-bg{
+   background-color: rgb(129, 129, 255) ; 
+}
 /* --------------------------- */
 
 
